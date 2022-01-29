@@ -15,7 +15,7 @@ export const Counter = (props: Props) => {
     }
 
     return (
-        <>
+        <div>
             <h1> Counter </h1>
 
             <span> {count} </span>
@@ -23,6 +23,6 @@ export const Counter = (props: Props) => {
             <button onClick={ plus }>
                 +1
             </button>
-        </>
+        </div>
     )
 }

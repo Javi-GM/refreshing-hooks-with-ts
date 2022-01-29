@@ -32,7 +32,7 @@ export const CounterEffect = () => {
     }, [count]);
 
     return (
-        <>
+        <div>
             <h1> CounterEffect </h1>
 
             <h2 ref={counterElement}> {count} </h2>
@@ -40,6 +40,6 @@ export const CounterEffect = () => {
             <button onClick={ plus }>
                 +1
             </button>
-        </>
+        </div>
     )
 }

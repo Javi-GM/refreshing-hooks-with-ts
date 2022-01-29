@@ -27,7 +27,7 @@ export const CounterBy = (props: Props) => {
     }
 
     return (
-        <>
+        <div>
             <h1> CounterBy: { counter }</h1>
             <h1> Clicks: { clicks }</h1>
 
@@ -38,6 +38,6 @@ export const CounterBy = (props: Props) => {
             <button onClick={ () => plus(5) }>
                 +5
             </button>
-        </>
+        </div>
     )
 }
