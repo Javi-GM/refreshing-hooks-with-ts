@@ -1,22 +1,21 @@
 import { useReducer } from 'react';
-import * as actions from '../counter-reducer/actions/actions';
-import { INITIAL_STATE, reducer } from '../counter-reducer/state/counterReducer';
+import { INITIAL_STATE, reducer } from './state/counterReducer';
 
 export const CounterReducer = () => {
 
     const [counterState, dispatch] = useReducer(reducer, INITIAL_STATE);
     
     const plus = (value: number) => {
-        dispatch(actions.doIncreaseBy(value))
+        dispatch({type: 'increaseBy', payload: {value}})
     }
 
     const reset = () => {
-        dispatch(actions.doReset());
+        dispatch({type: 'reset'})
     }
 
     return (
         <div>
-            <h1> CounterReducer </h1>
+            <h1> CounterReducer refactorizado </h1>
 
             <pre> {JSON.stringify(counterState, null, 2)} </pre>
 

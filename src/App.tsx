@@ -3,7 +3,7 @@ import { CounterBy } from "./components/CounterBy";
 import { CounterEffect } from "./components/CounterEffect";
 import { CounterHook } from "./components/CounterHook";
 import './App.css';
-import { CounterReducer } from "./components/CounterReducer";
+import { CounterReducer } from "./counter-reducer/CounterReducer";
 
 function App() {
   return (
